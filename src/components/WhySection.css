@@ -1,0 +1,151 @@
+.why-section {
+  background-color: #171B26;
+  padding: 6rem 2rem;
+  position: relative;
+}
+
+.why-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.cards-wrapper {
+  position: relative;
+  height: 400px;
+  margin-bottom: 3rem;
+}
+
+.info-card {
+  position: absolute;
+  background: #EDA551;
+  border-radius: 16px;
+  padding: 1.5rem;
+  color: white;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 280px;
+  box-shadow: 0 10px 30px rgba(237, 165, 81, 0.3);
+}
+
+.card-1 {
+  top: 0;
+  left: 10%;
+  transform: rotate(-8deg);
+}
+
+.card-2 {
+  top: 0;
+  right: 10%;
+  transform: rotate(8deg);
+}
+
+.card-3 {
+  bottom: 0;
+  left: 5%;
+  transform: rotate(5deg);
+}
+
+.card-4 {
+  bottom: 0;
+  right: 5%;
+  transform: rotate(-5deg);
+}
+
+.why-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.why-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #EDA551, transparent);
+}
+
+.btn-why {
+  padding: 0.875rem 2.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  background: linear-gradient(135deg, #f59e0b 0%, #fb923c 100%);
+  color: white;
+}
+
+.btn-why:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(237, 165, 81, 0.4);
+}
+
+@media (max-width: 1024px) {
+  .cards-wrapper {
+    height: 500px;
+  }
+  
+  .info-card {
+    max-width: 220px;
+    font-size: 0.85rem;
+    padding: 1.25rem;
+  }
+  
+  .card-1 {
+    left: 5%;
+  }
+  
+  .card-2 {
+    right: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-section {
+    padding: 4rem 1rem;
+  }
+  
+  .cards-wrapper {
+    height: 600px;
+  }
+  
+  .info-card {
+    max-width: 160px;
+    font-size: 0.75rem;
+    padding: 1rem;
+  }
+  
+  .card-1 {
+    left: 0;
+    top: 0;
+  }
+  
+  .card-2 {
+    right: 0;
+    top: 0;
+  }
+  
+  .card-3 {
+    left: 0;
+    bottom: 50px;
+  }
+  
+  .card-4 {
+    right: 0;
+    bottom: 50px;
+  }
+  
+  .why-title {
+    font-size: 2.5rem;
+  }
+}
+
