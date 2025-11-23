@@ -1,5 +1,6 @@
 import React from 'react';
 import './BrandsSection.css';
+import underline from '../assets/underline.png';
 
 const BrandsSection = () => {
   const brands = [
@@ -13,10 +14,13 @@ const BrandsSection = () => {
   return (
     <section className="brands-section">
       <div className="brands-container">
-        <h2 className="brands-title">
-          Different brands,<br />
-          same solution
-        </h2>
+        <div className="brands-title-wrapper">
+          <h2 className="brands-title">
+            Different brands,<br />
+            same solution
+          </h2>
+          <img src={underline} alt="Underline" className="brands-underline" />
+        </div>
         
         <div className="brands-grid">
           {brands.map((brand, index) => (

@@ -9,12 +9,27 @@
   text-align: center;
 }
 
+.brands-title-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 4rem;
+}
+
 .brands-title {
   font-size: 3rem;
   font-weight: 700;
   color: white;
-  margin-bottom: 4rem;
+  margin-bottom: 0;
   line-height: 1.3;
+}
+
+.brands-underline {
+  width: 70%;
+  height: auto;
+  margin-top: 0.02rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .brands-grid {
@@ -54,6 +69,11 @@
   
   .brands-title {
     font-size: 2rem;
+  }
+  
+  .brands-underline {
+    margin-top: 0.4rem;
+    width: 75%;
   }
   
   .brands-grid {

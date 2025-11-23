@@ -2,7 +2,7 @@ import React from 'react';
 import './Hero.css';
 import buyNowBtn from '../assets/BuyNowBTN.png';
 import whyBtn from '../assets/WhyDoINeedThisBTN.png';
-import heroLogo from '../assets/HeroLogo.png';
+import heroLogo from '../assets/LogoNoBG.png';
 import heroCursor from '../assets/HeroCursor.png';
 
 const Hero = () => {
