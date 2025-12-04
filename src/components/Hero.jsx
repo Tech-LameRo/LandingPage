@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import buyNowBtn from '../assets/BuyNowBTN.png';
+import waitingListBtn from '../assets/WaitingListBTN.png';
 import whyBtn from '../assets/WhyDoINeedThisBTN.png';
 import heroLogo from '../assets/LogoNoBG.png';
 import heroCursor from '../assets/HeroCursor.png';
@@ -18,8 +18,8 @@ const Hero = () => {
         </p>
         
         <div className="hero-buttons">
-          <a href="#why-section">
-            <img src={buyNowBtn} alt="Buy now" className="btn btn-primary-img" />
+          <a href="https://forms.gle/2jW6kUwC5xP2MWVh9" target="_blank" rel="noopener noreferrer">
+            <img src={waitingListBtn} alt="Join the waiting list" className="btn btn-primary-img" />
           </a>
           <img src={whyBtn} alt="Why do I need this" className="btn btn-secondary-img" />
         </div>

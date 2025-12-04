@@ -20,7 +20,7 @@ function App() {
         <CustomizeSection />
         <Footer />
       </main>
-    </div>
+      </div>
   )
 }
 

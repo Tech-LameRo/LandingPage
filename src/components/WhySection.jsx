@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './WhySection.css';
-import buyNowBtn from '../assets/BuyNowBTN.png';
+import waitingListBtn from '../assets/WaitingListBTN.png';
 import buyArrow from '../assets/BuyArrow.png';
 import circle from '../assets/Circle.png';
 
@@ -130,7 +130,9 @@ const WhySection = () => {
         <div className="why-content">
           <h2 className="why-title">Why <span className="demadose-wrapper">DemaDose<img src={circle} alt="Circle" className="circle-bg" /></span>?</h2>
           <img src={buyArrow} alt="Arrow" className="buy-arrow" />
-          <img src={buyNowBtn} alt="Buy now" className="btn-why-img" />
+          <a href="https://forms.gle/2jW6kUwC5xP2MWVh9" target="_blank" rel="noopener noreferrer">
+            <img src={waitingListBtn} alt="Join the waiting list" className="btn-why-img" />
+          </a>
         </div>
       </div>
     </section>
