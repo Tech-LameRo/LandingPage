@@ -11,7 +11,7 @@ const Header = () => {
         </div>
         
         <nav className="nav">
-          <a href="#pricing" className="nav-link">Pricing</a>
+          <a href="https://forms.gle/2jW6kUwC5xP2MWVh9" className="nav-link">Early Access</a>
           <div className="nav-dropdown">
             <span className="nav-link">Solutions</span>
             <div className="dropdown-menu">

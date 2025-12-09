@@ -21,7 +21,9 @@ const Hero = () => {
           <a href="https://forms.gle/2jW6kUwC5xP2MWVh9" target="_blank" rel="noopener noreferrer">
             <img src={waitingListBtn} alt="Join the waiting list" className="btn btn-primary-img" />
           </a>
+          <a href="#why-section" className="nav-link">
           <img src={whyBtn} alt="Why do I need this" className="btn btn-secondary-img" />
+          </a>
         </div>
         
         <p className="hero-text">

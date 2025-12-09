@@ -4,7 +4,7 @@
 }
 
 .brands-container {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -83,8 +83,8 @@
 }
 
 .brand-logo {
-  height: 80px;
-  width: 150px;
+  height: 5rem;
+  width: 9.375rem;
   object-fit: contain;
   filter: brightness(0) invert(1);
   pointer-events: none;
@@ -111,8 +111,8 @@
   }
   
   .brand-logo {
-    height: 60px;
-    width: 120px;
+    height: 3.75rem;
+    width: 7.5rem;
   }
 }
 

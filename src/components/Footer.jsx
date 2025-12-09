@@ -50,6 +50,7 @@ const Footer = () => {
             <div className="footer-logo-circle">
               <img src={logo} alt="DemaDose Logo" className="footer-logo-img" />
             </div>
+            <p className="copyright-text">All rights reserved DemaDose © 2025</p>
           </div>
         </div>
       </footer>

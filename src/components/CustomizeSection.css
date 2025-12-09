@@ -4,7 +4,7 @@
 }
 
 .customize-container {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -47,7 +47,7 @@
 
 .editing-text-image {
   width: auto;
-  height: 120px;
+  height: 7.5rem;
   object-fit: contain;
   cursor: pointer;
   transform-origin: center;
@@ -61,7 +61,7 @@
 
 .change-color-image {
   width: auto;
-  height: 120px;
+  height: 7.5rem;
   object-fit: contain;
   cursor: pointer;
   transform-origin: center;
@@ -71,14 +71,14 @@
   background: #EDA551;
   color: white;
   padding: 0.75rem 1.5rem;
-  border-radius: 25px;
+  border-radius: 1.5625rem;
   font-weight: 600;
   white-space: nowrap;
-  box-shadow: 0 5px 20px rgba(237, 165, 81, 0.4);
+  box-shadow: 0 0.3125rem 1.25rem rgba(237, 165, 81, 0.4);
 }
 
 .pointer-arrow {
-  width: 40px;
+  width: 2.5rem;
   height: auto;
   object-fit: contain;
 }
@@ -93,17 +93,17 @@
 
 .phone-wrapper {
   position: relative;
-  width: 428px;
-  height: 926px;
+  width: 26.75rem;
+  height: 57.875rem;
 }
 
 .phone-mockup {
-  width: 428px;
-  height: 926px;
-  border-radius: 56px;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+  width: 26.75rem;
+  height: 57.875rem;
+  border-radius: 3.5rem;
+  box-shadow: 0 1.875rem 3.75rem rgba(0, 0, 0, 0.4);
   display: block;
-  border: 16px solid #000000;
+  border: 1rem solid #000000;
   box-sizing: border-box;
   overflow: hidden;
   background: #FFFFFF;
@@ -111,9 +111,9 @@
 
 .status-bar-overlay {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  width: calc(100% - 32px);
+  top: 1rem;
+  right: 1rem;
+  width: calc(100% - 2rem);
   height: auto;
   pointer-events: none;
   z-index: 10;
@@ -121,7 +121,7 @@
 
 .phone-screen {
   background-color: #ffffff;
-  border-radius: 40px;
+  border-radius: 2.5rem;
   padding: 0 1.5rem 1.5rem 1.5rem;
   width: 100%;
   height: 100%;
@@ -169,8 +169,8 @@
 .form-group input {
   width: 100%;
   padding: 0.875rem;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
+  border: 0.0625rem solid #e2e8f0;
+  border-radius: 0.75rem;
   font-size: 1rem;
   background-color: #f8fafc;
   color: #171B26;
@@ -185,7 +185,7 @@
 .payment-summary {
   background-color: #f8fafc;
   padding: 1.5rem;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   margin: 1.5rem 0;
 }
 
@@ -202,7 +202,7 @@
   color: #171B26;
   font-size: 1.125rem;
   padding-top: 0.75rem;
-  border-top: 2px solid #e2e8f0;
+  border-top: 0.125rem solid #e2e8f0;
   margin-top: 0.75rem;
 }
 
@@ -212,7 +212,7 @@
   background: #171B26;
   color: white;
   border: none;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -230,8 +230,8 @@
   }
   
   .pointer-arrow {
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
   }
 }
 
@@ -270,24 +270,24 @@
   
   .phone-wrapper {
     order: 2;
-    width: 320px;
-    height: 693px;
+    width: 20rem;
+    height: 43.3125rem;
   }
   
   .phone-mockup {
-    width: 320px;
-    height: 693px;
+    width: 20rem;
+    height: 43.3125rem;
   }
   
   .status-bar-overlay {
-    width: calc(100% - 24px);
-    top: 12px;
-    right: 12px;
+    width: calc(100% - 1.5rem);
+    top: 0.75rem;
+    right: 0.75rem;
   }
   
   .editing-text-image,
   .change-color-image {
-    height: 80px;
+    height: 5rem;
   }
 }
 
@@ -325,24 +325,24 @@
   
   .phone-wrapper {
     order: 2;
-    width: 320px;
-    height: 693px;
+    width: 20rem;
+    height: 43.3125rem;
   }
   
   .phone-mockup {
-    width: 320px;
-    height: 693px;
+    width: 20rem;
+    height: 43.3125rem;
   }
   
   .status-bar-overlay {
-    width: calc(100% - 24px);
-    top: 12px;
-    right: 12px;
+    width: calc(100% - 1.5rem);
+    top: 0.75rem;
+    right: 0.75rem;
   }
   
   .editing-text-image,
   .change-color-image {
-    height: 80px;
+    height: 5rem;
   }
 }
 
