@@ -1,17 +1,43 @@
 import React from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Header.css';
 import logo from '../assets/LogoNoBG.png';
 
 const Header = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleContactClick = (e) => {
+    e.preventDefault();
+    
+    // If we're not on the home page, navigate there first
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Wait for navigation, then scroll
+      setTimeout(() => {
+        const element = document.getElementById('contact');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      // Already on home page, just scroll
+      const element = document.getElementById('contact');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <header className="header">
       <div className="header-container">
-        <div className="logo">
+        <Link to="/" className="logo">
           <img src={logo} alt="DemaDose Logo" className="logo-icon" />
-        </div>
+        </Link>
         
         <nav className="nav">
-          <a href="https://forms.gle/2jW6kUwC5xP2MWVh9" className="nav-link">Early Access</a>
+          <Link to="/early-access" className="nav-link">Early Access</Link>
           <div className="nav-dropdown">
             <span className="nav-link">Solutions</span>
             <div className="dropdown-menu">
@@ -68,7 +94,7 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <a href="#contact" className="nav-link">Contact Us</a>
+          <a href="#contact" onClick={handleContactClick} className="nav-link">Contact Us</a>
         </nav>
         
         <div className="globe-icon">
@@ -83,4 +109,3 @@ const Header = () => {
 };
 
 export default Header;
-

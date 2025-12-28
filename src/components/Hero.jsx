@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 import waitingListBtn from '../assets/WaitingListBTN.png';
 import whyBtn from '../assets/WhyDoINeedThisBTN.png';
@@ -6,6 +7,14 @@ import heroLogo from '../assets/LogoNoBG.png';
 import heroCursor from '../assets/HeroCursor.png';
 
 const Hero = () => {
+  const handleWhyClick = (e) => {
+    e.preventDefault();
+    const element = document.getElementById('why-section');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="hero">
       <div className="hero-content">
@@ -18,11 +27,11 @@ const Hero = () => {
         </p>
         
         <div className="hero-buttons">
-          <a href="https://forms.gle/2jW6kUwC5xP2MWVh9" target="_blank" rel="noopener noreferrer">
+          <Link to="/early-access">
             <img src={waitingListBtn} alt="Join the waiting list" className="btn btn-primary-img" />
-          </a>
-          <a href="#why-section" className="nav-link">
-          <img src={whyBtn} alt="Why do I need this" className="btn btn-secondary-img" />
+          </Link>
+          <a href="#why-section" onClick={handleWhyClick} className="nav-link">
+            <img src={whyBtn} alt="Why do I need this" className="btn btn-secondary-img" />
           </a>
         </div>
         
@@ -35,4 +44,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

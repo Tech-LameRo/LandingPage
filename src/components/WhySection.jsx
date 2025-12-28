@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import './WhySection.css';
 import waitingListBtn from '../assets/WaitingListBTN.png';
 import buyArrow from '../assets/BuyArrow.png';
@@ -93,8 +94,8 @@ const WhySection = () => {
     },
     {
       id: 4,
-      title:"It’s easier",
-      text: "It’s easier to make someone buy again than to win a new customer your app makes that simple"
+      title:"It's easier",
+      text: "It's easier to make someone buy again than to win a new customer your app makes that simple"
     }
   ];
 
@@ -130,9 +131,9 @@ const WhySection = () => {
         <div className="why-content">
           <h2 className="why-title">Why <span className="demadose-wrapper">DemaDose<img src={circle} alt="Circle" className="circle-bg" /></span>?</h2>
           <img src={buyArrow} alt="Arrow" className="buy-arrow" />
-          <a href="https://forms.gle/2jW6kUwC5xP2MWVh9" target="_blank" rel="noopener noreferrer">
+          <Link to="/early-access">
             <img src={waitingListBtn} alt="Join the waiting list" className="btn-why-img" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>
@@ -140,4 +141,3 @@ const WhySection = () => {
 };
 
 export default WhySection;
-
