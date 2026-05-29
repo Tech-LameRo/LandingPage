@@ -10,15 +10,6 @@ export const JOB_LISTINGS = [
     postedAt:'2026-04-25',
   },
   {
-    id:'frontend-engineer-intern',
-    title:'Front-End Engineer Intern (React Native)',
-    subtitle:'Summer 2026',
-    description:'Build real product features with React Native at a fast-moving startup shaping the future of no-code apps.',
-    department:'Engineering',
-    url:'https://broken-fridge-6e8.notion.site/3181394907b780e191ded673cf268158?pvs=105',
-    postedAt:'2026-03-13',
-  },
-  {
     id:'content-creator', 
     title:'Content Creator',
     subtitle:'Summer 2026',
